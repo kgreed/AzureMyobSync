@@ -137,6 +137,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ProgressBarMYOBListViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WinModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -146,6 +149,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controllers\ProgressBarMYOBListViewController.resx">
+      <DependentUpon>ProgressBarMYOBListViewController.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="WinModule.resx">
       <DependentUpon>WinModule.cs</DependentUpon>
@@ -156,6 +162,10 @@
     <ProjectReference Include="..\AMS.Module\AMS.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
       <Name>AMS.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.MyobApi\MYOBAPI\SBD.AMS.MYOB.csproj">
+      <Project>{F67F4CAE-4DA5-47D6-9BDA-AE05282845CA}</Project>
+      <Name>SBD.AMS.MYOB</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

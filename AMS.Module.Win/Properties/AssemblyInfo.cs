@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AMS.Module.Win")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Software by Design (Aust) Pty Ltd")]
 [assembly: AssemblyProduct("AMS.Module.Win")]
 [assembly: AssemblyCopyright("Copyright © 2018")]
 [assembly: AssemblyTrademark("")]
