@@ -52,7 +52,12 @@ namespace SBD.AMS.Module.MYOB
         [NotMapped]
         public DocumentAction DocumentAction
         {
-            get => (DocumentAction)DocumentPrintActionId;
+            get
+            {
+                if (DocumentPrintActionId == null)
+                    return DocumentAction.Nothing;
+                return (DocumentAction) DocumentPrintActionId;
+            }
             set => DocumentPrintActionId = (int)value;
         }
 

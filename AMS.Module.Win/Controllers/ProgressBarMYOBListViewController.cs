@@ -102,7 +102,8 @@ namespace SBD.AMS.Module.Win.Controllers
         {
             var window = (WinWindow)Frame;
             var ct = window.Form.Controls.Find("ribbonStatusBar", true)[0] as RibbonStatusBar;
-            return ((BarEditItem)(ct.ItemLinks[2].Item));
+            var links = ct.ItemLinks;
+            return (BarEditItem)links[2].Item;
         }
 
         private void InitializeComponent()

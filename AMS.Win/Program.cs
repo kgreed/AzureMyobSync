@@ -29,7 +29,19 @@ namespace AMS.Win {
             // Refer to the https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112680.aspx help article for more details on how to provide a custom splash form.
             //winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen("YourSplashImage.png");
             SecurityAdapterHelper.Enable();
-            if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
+
+
+
+            winApplication.CreateCustomTemplate += delegate (object sender, CreateCustomTemplateEventArgs e)
+            {
+                if (e.Context == TemplateContext.View)
+                {
+                    e.Template = new CustomDetailRibbonForm();
+                }
+            };
+
+
+            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 winApplication.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             }
 #if EASYTEST

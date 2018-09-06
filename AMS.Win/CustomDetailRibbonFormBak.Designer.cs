@@ -29,17 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomDetailRibbonForm));
             this.ribbonControl = new DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2();
             this.barActionContainerObjectsCreation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
             this.barContainerObjectsCreation = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerClose = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerClose = new DevExpress.XtraBars.BarLinkContainerExItem();
             this.barActionContainerFile = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
             this.barContainerFile = new DevExpress.XtraBars.BarLinkContainerExItem();
             this.barActionContainerSave = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
             this.barContainerSave = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerEdit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerEdit = new DevExpress.XtraBars.BarLinkContainerExItem();
             this.barActionContainerOpenObject = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
             this.barContainerOpenObject = new DevExpress.XtraBars.BarLinkContainerExItem();
             this.barActionContainerUndoRedo = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
@@ -99,18 +96,18 @@
             this.ribbonGroupDiagnostic = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemProgressBar2 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
             this.repositoryItemRatingControl1 = new DevExpress.XtraEditors.Repository.RepositoryItemRatingControl();
+            this.repositoryItemProgressBar3 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.viewSitePanel = new DevExpress.XtraEditors.PanelControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.viewSiteManager = new DevExpress.ExpressApp.Win.Templates.ViewSiteManager(this.components);
             this.modelSynchronizationManager = new DevExpress.ExpressApp.Win.Templates.ModelSynchronizationManager(this.components);
             this.formStateModelSynchronizer = new DevExpress.ExpressApp.Win.Core.FormStateModelSynchronizer(this.components);
             this.contextMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerObjectsCreation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerSave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerOpenObject)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerUndoRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerReports)).BeginInit();
@@ -133,17 +130,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRatingControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewSitePanel)).BeginInit();
+            this.viewSitePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contextMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
             // 
             this.ribbonControl.ActionContainers.Add(this.barActionContainerObjectsCreation);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerClose);
             this.ribbonControl.ActionContainers.Add(this.barActionContainerFile);
             this.ribbonControl.ActionContainers.Add(this.barActionContainerSave);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerEdit);
             this.ribbonControl.ActionContainers.Add(this.barActionContainerOpenObject);
             this.ribbonControl.ActionContainers.Add(this.barActionContainerUndoRedo);
             this.ribbonControl.ActionContainers.Add(this.barActionContainerReports);
@@ -169,9 +167,7 @@
             this.ribbonControl.ExpandCollapseItem,
             this.barContainerFile,
             this.barContainerObjectsCreation,
-            this.barContainerClose,
             this.barContainerSave,
-            this.barContainerEdit,
             this.barContainerOpenObject,
             this.barContainerUndoRedo,
             this.barContainerReports,
@@ -189,7 +185,7 @@
             this.barContainerStatusMessages,
             this.barEditItem1});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 6;
+            this.ribbonControl.MaxItemId = 11;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -198,9 +194,10 @@
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemProgressBar1,
             this.repositoryItemProgressBar2,
-            this.repositoryItemRatingControl1});
+            this.repositoryItemRatingControl1,
+            this.repositoryItemProgressBar3});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl.Size = new System.Drawing.Size(290, 27);
+            this.ribbonControl.Size = new System.Drawing.Size(457, 143);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             // 
             // barActionContainerObjectsCreation
@@ -215,19 +212,6 @@
             this.barContainerObjectsCreation.MergeOrder = 1;
             this.barContainerObjectsCreation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
             this.barContainerObjectsCreation.Name = "barContainerObjectsCreation";
-            // 
-            // barActionContainerClose
-            // 
-            this.barActionContainerClose.ActionCategory = "Close";
-            this.barActionContainerClose.BarContainerItem = this.barContainerClose;
-            // 
-            // barContainerClose
-            // 
-            this.barContainerClose.Caption = "Close";
-            this.barContainerClose.Id = 18;
-            this.barContainerClose.MergeOrder = 2;
-            this.barContainerClose.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerClose.Name = "barContainerClose";
             // 
             // barActionContainerFile
             // 
@@ -254,18 +238,6 @@
             this.barContainerSave.MergeOrder = 7;
             this.barContainerSave.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
             this.barContainerSave.Name = "barContainerSave";
-            // 
-            // barActionContainerEdit
-            // 
-            this.barActionContainerEdit.ActionCategory = "Edit";
-            this.barActionContainerEdit.BarContainerItem = this.barContainerEdit;
-            // 
-            // barContainerEdit
-            // 
-            this.barContainerEdit.Caption = "Edit";
-            this.barContainerEdit.Id = 18;
-            this.barContainerEdit.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerEdit.Name = "barContainerEdit";
             // 
             // barActionContainerOpenObject
             // 
@@ -484,7 +456,6 @@
             // 
             // barContainerNotifications
             // 
-            this.barContainerNotifications.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barContainerNotifications.Caption = "Notifications";
             this.barContainerNotifications.Id = 28;
             this.barContainerNotifications.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
@@ -494,7 +465,6 @@
             // 
             this.applicationMenu.ItemLinks.Add(this.barContainerObjectsCreation, true);
             this.applicationMenu.ItemLinks.Add(this.barContainerFile, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerClose, true);
             this.applicationMenu.ItemLinks.Add(this.barContainerSave, true);
             this.applicationMenu.ItemLinks.Add(this.barContainerExport, true);
             this.applicationMenu.ItemLinks.Add(this.barContainerPrint, true);
@@ -507,6 +477,7 @@
             // 
             this.barContainerStatusMessages.Caption = "StatusMessages";
             this.barContainerStatusMessages.Id = 27;
+            this.barContainerStatusMessages.MenuBarWidth = 10;
             this.barContainerStatusMessages.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
             this.barContainerStatusMessages.Name = "barContainerStatusMessages";
             // 
@@ -518,7 +489,6 @@
             this.barEditItem1.EditWidth = 200;
             this.barEditItem1.Id = 3;
             this.barEditItem1.Name = "barEditItem1";
-            this.barEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.OnlyInCustomizing;
             // 
             // repositoryItemProgressBar1
             // 
@@ -561,7 +531,6 @@
             // ribbonGroupEdit
             // 
             this.ribbonGroupEdit.AllowTextClipping = false;
-            this.ribbonGroupEdit.ItemLinks.Add(this.barContainerEdit);
             this.ribbonGroupEdit.ItemLinks.Add(this.barContainerUndoRedo);
             this.ribbonGroupEdit.Name = "ribbonGroupEdit";
             this.ribbonGroupEdit.ShowCaptionButton = false;
@@ -611,7 +580,6 @@
             // ribbonGroupClose
             // 
             this.ribbonGroupClose.AllowTextClipping = false;
-            this.ribbonGroupClose.ItemLinks.Add(this.barContainerClose);
             this.ribbonGroupClose.Name = "ribbonGroupClose";
             this.ribbonGroupClose.ShowCaptionButton = false;
             this.ribbonGroupClose.Text = "Close";
@@ -682,24 +650,38 @@
             this.repositoryItemRatingControl1.AutoHeight = false;
             this.repositoryItemRatingControl1.Name = "repositoryItemRatingControl1";
             // 
+            // repositoryItemProgressBar3
+            // 
+            this.repositoryItemProgressBar3.Name = "repositoryItemProgressBar3";
+            // 
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barContainerStatusMessages);
             this.ribbonStatusBar.ItemLinks.Add(this.barContainerNotifications);
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 264);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 331);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(290, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(457, 31);
             // 
             // viewSitePanel
             // 
             this.viewSitePanel.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.viewSitePanel.Controls.Add(this.pictureBox1);
             this.viewSitePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewSitePanel.Location = new System.Drawing.Point(0, 27);
+            this.viewSitePanel.Location = new System.Drawing.Point(0, 143);
             this.viewSitePanel.Name = "viewSitePanel";
-            this.viewSitePanel.Size = new System.Drawing.Size(290, 237);
+            this.viewSitePanel.Size = new System.Drawing.Size(457, 188);
             this.viewSitePanel.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(325, 157);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // viewSiteManager
             // 
@@ -717,11 +699,9 @@
             // 
             this.contextMenu.ItemLinks.Add(this.barContainerObjectsCreation, true);
             this.contextMenu.ItemLinks.Add(this.barContainerSave, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerEdit, true);
             this.contextMenu.ItemLinks.Add(this.barContainerOpenObject, true);
             this.contextMenu.ItemLinks.Add(this.barContainerUndoRedo, true);
             this.contextMenu.ItemLinks.Add(this.barContainerReports, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerClose, true);
             this.contextMenu.ItemLinks.Add(this.barContainerRecordEdit, true);
             this.contextMenu.ItemLinks.Add(this.barContainerView, true);
             this.contextMenu.ItemLinks.Add(this.barContainerPrint, true);
@@ -734,7 +714,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 295);
+            this.ClientSize = new System.Drawing.Size(457, 362);
             this.Controls.Add(this.viewSitePanel);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);
@@ -743,10 +723,8 @@
             this.StatusBar = this.ribbonStatusBar;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerObjectsCreation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerSave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerOpenObject)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerUndoRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barActionContainerReports)).EndInit();
@@ -769,7 +747,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRatingControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewSitePanel)).EndInit();
+            this.viewSitePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contextMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -804,9 +785,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonGroupClose;
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerFile;
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerObjectsCreation;
-        private DevExpress.XtraBars.BarLinkContainerExItem barContainerClose;
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerSave;
-        private DevExpress.XtraBars.BarLinkContainerExItem barContainerEdit;
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerOpenObject;
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerUndoRedo;
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerReports;
@@ -828,9 +807,7 @@
         private DevExpress.XtraBars.BarLinkContainerExItem barContainerStatusMessages;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerFile;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerObjectsCreation;
-		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerClose;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerSave;
-		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerEdit;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerOpenObject;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerUndoRedo;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerReports;
@@ -849,9 +826,11 @@
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerAbout;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerMenu;
 		private DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer barActionContainerNotifications;
-        private DevExpress.XtraBars.BarEditItem barEditItem1;
 		private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
 		private DevExpress.XtraEditors.Repository.RepositoryItemRatingControl repositoryItemRatingControl1;
 		private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar3;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
     }
 }
