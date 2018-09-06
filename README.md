@@ -6,4 +6,4 @@ MYOB
 AZURE
 Dev Express XAF
 
-[For help join at](https://discourse.softwarebydesign.com.au/t/about-the-azure-myob-sync-category/1303)
+[For help join Software by Design's Discourse](https://discourse.softwarebydesign.com.au/t/about-the-azure-myob-sync-category/1303)
