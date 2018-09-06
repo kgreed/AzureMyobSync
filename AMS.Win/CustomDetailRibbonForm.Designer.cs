@@ -200,7 +200,7 @@
             this.repositoryItemProgressBar2,
             this.repositoryItemRatingControl1});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl.Size = new System.Drawing.Size(290, 27);
+            this.ribbonControl.Size = new System.Drawing.Size(643, 192);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             // 
             // barActionContainerObjectsCreation
@@ -687,18 +687,18 @@
             this.ribbonStatusBar.ItemLinks.Add(this.barContainerStatusMessages);
             this.ribbonStatusBar.ItemLinks.Add(this.barContainerNotifications);
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 264);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 407);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(290, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(643, 41);
             // 
             // viewSitePanel
             // 
             this.viewSitePanel.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.viewSitePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewSitePanel.Location = new System.Drawing.Point(0, 27);
+            this.viewSitePanel.Location = new System.Drawing.Point(0, 192);
             this.viewSitePanel.Name = "viewSitePanel";
-            this.viewSitePanel.Size = new System.Drawing.Size(290, 237);
+            this.viewSitePanel.Size = new System.Drawing.Size(643, 215);
             this.viewSitePanel.TabIndex = 0;
             // 
             // viewSiteManager
@@ -734,7 +734,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 295);
+            this.ClientSize = new System.Drawing.Size(643, 448);
             this.Controls.Add(this.viewSitePanel);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);

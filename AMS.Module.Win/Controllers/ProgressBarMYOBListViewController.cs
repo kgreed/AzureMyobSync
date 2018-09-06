@@ -130,7 +130,7 @@ namespace SBD.AMS.Module.Win.Controllers
 
         private void actMYOBSync_Execute_1(object sender, SimpleActionExecuteEventArgs e)
         {
-            var login = "Admin";
+            var login = "Administrator";
             var types = new List<MYOBTypeEnum>();
             if (View.Id.ToLower().Contains("salesinvoice"))
             {
