@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SBD.AMS.MYOB</RootNamespace>
     <AssemblyName>SBD.AMS.MYOB</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -64,8 +64,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="MYOB.AccountRight.SDK, Version=2016.2.99.0, Culture=neutral, PublicKeyToken=f83481fd544f6c95, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MYOB.AccountRight.API.SDK.2016.2.99\lib\net45\MYOB.AccountRight.SDK.dll</HintPath>
+    <Reference Include="MYOB.AccountRight.SDK, Version=2018.1.141.0, Culture=neutral, PublicKeyToken=2e515d7fddc28a4e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MYOB.AccountRight.API.SDK.2018.1.141-rc1\lib\net45\MYOB.AccountRight.SDK.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
