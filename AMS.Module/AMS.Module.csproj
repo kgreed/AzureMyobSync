@@ -111,6 +111,11 @@
     <Compile Include="BusinessObjects\MYOB\MYOBSupplierAddress.cs" />
     <Compile Include="BusinessObjects\MYOB\MYOBTaxCode.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Migrations\201809170712194_myob.cs" />
+    <Compile Include="Migrations\201809170712194_myob.Designer.cs">
+      <DependentUpon>201809170712194_myob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -120,6 +125,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809170712194_myob.resx">
+      <DependentUpon>201809170712194_myob.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="Module.resx">
       <SubType>Designer</SubType>
